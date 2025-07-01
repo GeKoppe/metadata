@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d840d4a-d582-4922-9001-c704ebab8fcf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/Cache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/DocumentCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/http/HTTPClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2zErzjftTfK2zU3d4Scch2bPhyh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.Test.executor": "Run",
+    "JUnit.TestCaches.testEnvironmentCache.executor": "Debug",
+    "JUnit.TestCaches.testUserCache.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/gerri/Desktop/King of Ordners/Git Repos/metadata/metadata/src/test",
+    "onboarding.tips.debug.path": "C:/Users/gerri/Desktop/King of Ordners/Git Repos/metadata/metadata/src/main/java/org/dmsextension/paperless/Main.java",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Debugger"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestCaches.testUserCache">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <envs>
+        <env name="CACHE_REFRESH" value="10" />
+        <env name="PAPERLESS_API_PROTOCOL" value="http" />
+        <env name="PAPERLESS_HOST" value="ilostthegame" />
+        <env name="PAPERLESS_PORT" value="8000" />
+        <env name="PAPERLESS_SYSTEM_USER" value="sysuser" />
+        <env name="TOKEN_VALIDITY" value="50" />
+        <env name="PAPERLESS_SYSTEM_PW" value="elo" />
+      </envs>
+      <option name="envFilePaths">
+        <option value="$PROJECT_DIR$/docker/.env" />
+      </option>
+      <option name="MAIN_CLASS_NAME" value="org.dmsextension.paperless.Main" />
+      <module name="metadata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dmsextension.paperless.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="JUnit" factoryName="JUnit">
+      <module name="metadata" />
+      <option name="PACKAGE_NAME" value="org.dmsextension.paperless" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <envs>
+        <env name="CACHE_REFRESH" value="10" />
+        <env name="PAPERLESS_API_PROTOCOL" value="http" />
+        <env name="PAPERLESS_HOST" value="ilostthegame" />
+        <env name="PAPERLESS_PORT" value="8000" />
+        <env name="PAPERLESS_SYSTEM_USER" value="sysuser" />
+        <env name="TOKEN_VALIDITY" value="50" />
+        <env name="PAPERLESS_SYSTEM_PW" value="elo" />
+      </envs>
+      <dir value="$PROJECT_DIR$/src/test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCaches.testEnvironmentCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="metadata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dmsextension.paperless.system.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.dmsextension.paperless.system.cache" />
+      <option name="MAIN_CLASS_NAME" value="org.dmsextension.paperless.system.cache.TestCaches" />
+      <option name="METHOD_NAME" value="testEnvironmentCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCaches.testUserCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="metadata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dmsextension.paperless.system.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.dmsextension.paperless.system.cache" />
+      <option name="MAIN_CLASS_NAME" value="org.dmsextension.paperless.system.cache.TestCaches" />
+      <option name="METHOD_NAME" value="testUserCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="CACHE_REFRESH" value="10" />
+        <env name="PAPERLESS_API_PROTOCOL" value="http" />
+        <env name="PAPERLESS_HOST" value="ilostthegame" />
+        <env name="PAPERLESS_PORT" value="8000" />
+        <env name="PAPERLESS_SYSTEM_USER" value="sysuser" />
+        <env name="TOKEN_VALIDITY" value="50" />
+        <env name="PAPERLESS_SYSTEM_PW" value="elo" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.Test" />
+      <item itemvalue="JUnit.TestCaches.testUserCache" />
+      <item itemvalue="JUnit.TestCaches.testEnvironmentCache" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestCaches.testUserCache" />
+        <item itemvalue="JUnit.TestCaches.testEnvironmentCache" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-8336523bb0d9-657b72ed" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d840d4a-d582-4922-9001-c704ebab8fcf" name="Changes" comment="" />
+      <created>1751307339731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751307339731</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
