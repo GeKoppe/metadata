@@ -7,6 +7,7 @@ import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,20 +32,24 @@ public abstract class SystemCache extends Cache {
     public SystemCache() {}
 
     public static void initCaches() {
+        logger.info("Initializing system caches...");
         locks.put("env", new ReentrantLock());
         locks.put("user", new ReentrantLock());
         initEnvironmentCache();
         initUserCache();
+        logger.info("System caches initialized");
     }
 
     /**
      * Initializes environment cache {@link SystemCache#environemtCache}.
      */
     private static void initEnvironmentCache() {
+        logger.info("Initializing environment cache");
         CacheLoader<String, String> loader = new CacheLoader<>() {
             @NotNull
             @Override
-            public String load(@NotNull String key) throws Exception {
+            public String load(@NotNull String key)  {
+                logger.debug(String.format("Key %s not in cache, fetching from environment variables", key));
                 return System.getenv(key);
             }
         };
@@ -52,6 +57,7 @@ public abstract class SystemCache extends Cache {
                 .newBuilder()
                 .refreshAfterWrite(Integer.parseInt(System.getenv("CACHE_REFRESH")), TimeUnit.MINUTES)
                 .build(loader);
+        logger.info("Environment cache initialized");
     }
 
     /**

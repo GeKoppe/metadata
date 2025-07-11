@@ -13,6 +13,14 @@ public class TSelectOptions implements IDto {
         return null;
     }
 
+    @Override
+    public String toString() {
+        return "TSelectOptions{" +
+                "id='" + id + '\'' +
+                ", label='" + label + '\'' +
+                '}';
+    }
+
     public String getId() {
         return id;
     }

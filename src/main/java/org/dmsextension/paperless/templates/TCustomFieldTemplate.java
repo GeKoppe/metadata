@@ -39,7 +39,7 @@ public class TCustomFieldTemplate implements IDto {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", dataType='" + dataType + '\'' +
-                ", extraData='" + extraData + '\'' +
+                ", extraData='" + extraData.toString() + '\'' +
                 ", documentCount=" + documentCount +
                 '}';
     }

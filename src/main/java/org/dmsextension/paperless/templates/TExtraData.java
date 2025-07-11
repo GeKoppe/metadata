@@ -12,6 +12,13 @@ public class TExtraData implements IDto {
     }
 
     @Override
+    public String toString() {
+        return "TExtraData{" +
+                "selectOptions=" + selectOptions +
+                '}';
+    }
+
+    @Override
     public String toJsonString() {
         return null;
     }

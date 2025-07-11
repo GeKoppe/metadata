@@ -1,8 +1,8 @@
 package org.dmsextension.paperless.system.cache;
 
-import com.google.common.cache.LoadingCache;
-
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.concurrent.Callable;
 import java.util.concurrent.locks.ReentrantLock;
 
 public abstract class Cache {

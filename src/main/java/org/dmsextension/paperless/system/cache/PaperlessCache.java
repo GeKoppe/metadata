@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
-public abstract class PaperlessCache {
+public abstract class PaperlessCache extends Cache {
     private static final Logger logger = LoggerFactory.getLogger(PaperlessCache.class);
     private static LoadingCache<String, TCustomFieldTemplate> customFields;
     private static LoadingCache<String, TDocumentType> documentTypes;
@@ -23,19 +23,23 @@ public abstract class PaperlessCache {
     private static LoadingCache<String, TTag> tags;
 
     public static void initCaches() {
+        logger.info("Initializing paperless caches...");
         initCustomfieldCache();
         initDocumentTypeCache();
         initTagCache();
+        logger.info("Paperless caches initialized");
     }
 
 
     private static void initTagCache() {
+        logger.info("Initializing tag cache");
         CacheLoader<String, TTag> loader = new CacheLoader<String, TTag>() {
             private final OkHttpClient client = new OkHttpClient.Builder().build();
             private final Moshi moshi = new Moshi.Builder().build();
             @NotNull
             @Override
             public TTag load(@NotNull String key) throws Exception {
+                logger.debug(String.format("Key %s not in cache, retrieving tag from api", key));
                 TTag template = new TTag();
                 Request request = new Request.Builder()
                         .url(
@@ -44,7 +48,7 @@ public abstract class PaperlessCache {
                                         + SystemCache.getEnvironmentCacheValue("PAPERLESS_HOST")
                                         + ":"
                                         + SystemCache.getEnvironmentCacheValue("PAPERLESS_PORT")
-                                        + "/api/custom_fields/"
+                                        + "/api/tags/"
                                         + key
                                         + "/"
                         )
@@ -55,8 +59,10 @@ public abstract class PaperlessCache {
 
                 try (Response r = client.newCall(request).execute()) {
                     if (r.isSuccessful() && r.body() != null) {
+                        logger.debug("Successfully executed request, parsing response");
                         JsonAdapter<TTag> adapter = moshi.adapter(TTag.class);
                         template = adapter.fromJson(r.body().string());
+                        logger.debug(String.format("Template put into cache: %s", template));
                     } else {
                         logger.info("Request not successful: " + r);
                     }
@@ -71,15 +77,18 @@ public abstract class PaperlessCache {
                 .newBuilder()
                 .refreshAfterWrite(Long.parseLong(SystemCache.getEnvironmentCacheValue("TOKEN_VALIDITY")), TimeUnit.MINUTES)
                 .build(loader);
+        logger.info("Tag cache initialized");
     }
 
     private static void initCustomfieldCache() {
+        logger.info("Initializing custom field cache");
         CacheLoader<String, TCustomFieldTemplate> loader = new CacheLoader<String, TCustomFieldTemplate>() {
             private final OkHttpClient client = new OkHttpClient.Builder().build();
             private final Moshi moshi = new Moshi.Builder().build();
             @NotNull
             @Override
-            public TCustomFieldTemplate load(@NotNull String key) throws Exception {
+            public TCustomFieldTemplate load(@NotNull String key)  {
+                logger.debug(String.format("Key %s not in cache, retrieving custom field from api", key));
                 TCustomFieldTemplate template = new TCustomFieldTemplate();
                 Request request = new Request.Builder()
                         .url(
@@ -99,8 +108,10 @@ public abstract class PaperlessCache {
 
                 try (Response r = client.newCall(request).execute()) {
                     if (r.isSuccessful() && r.body() != null) {
+                        logger.debug("Successfully executed request, parsing response");
                         JsonAdapter<TCustomFieldTemplate> adapter = moshi.adapter(TCustomFieldTemplate.class);
                         template = adapter.fromJson(r.body().string());
+                        logger.debug(String.format("Template put into cache: %s", template));
                     } else {
                         logger.info("Request not successful: " + r);
                     }
@@ -115,15 +126,18 @@ public abstract class PaperlessCache {
                 .newBuilder()
                 .refreshAfterWrite(Long.parseLong(SystemCache.getEnvironmentCacheValue("TOKEN_VALIDITY")), TimeUnit.MINUTES)
                 .build(loader);
+        logger.info("Custom field cache initialized");
     }
 
     private static void initDocumentTypeCache() {
+        logger.info("Initializing document type cache");
         CacheLoader<String, TDocumentType> loader = new CacheLoader<String, TDocumentType>() {
             private final OkHttpClient client = new OkHttpClient.Builder().build();
             private final Moshi moshi = new Moshi.Builder().build();
             @NotNull
             @Override
             public TDocumentType load(@NotNull String key) throws Exception {
+                logger.debug(String.format("Key %s not in cache, retrieving document type from api", key));
                 TDocumentType template = new TDocumentType();
                 Request request = new Request.Builder()
                         .url(
@@ -132,7 +146,7 @@ public abstract class PaperlessCache {
                                         + SystemCache.getEnvironmentCacheValue("PAPERLESS_HOST")
                                         + ":"
                                         + SystemCache.getEnvironmentCacheValue("PAPERLESS_PORT")
-                                        + "/api/tags/"
+                                        + "/api/document_types/"
                                         + key
                                         + "/"
                         )
@@ -143,8 +157,10 @@ public abstract class PaperlessCache {
 
                 try (Response r = client.newCall(request).execute()) {
                     if (r.isSuccessful() && r.body() != null) {
+                        logger.debug("Successfully executed request, parsing response");
                         JsonAdapter<TDocumentType> adapter = moshi.adapter(TDocumentType.class);
                         template = adapter.fromJson(r.body().string());
+                        logger.debug(String.format("Template put into cache: %s", template));
                     } else {
                         logger.info("Request not successful: " + r);
                     }
@@ -159,6 +175,7 @@ public abstract class PaperlessCache {
                 .newBuilder()
                 .refreshAfterWrite(Long.parseLong(SystemCache.getEnvironmentCacheValue("TOKEN_VALIDITY")), TimeUnit.MINUTES)
                 .build(loader);
+        logger.info("Document type cache initialized");
     }
     public static TCustomFieldTemplate getCustomField(String id) {
         return customFields.getUnchecked(id);

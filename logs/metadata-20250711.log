@@ -1,0 +1,604 @@
+2025-07-11 12:46:01.464 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-07-11 12:46:01.820 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-07-11 12:53:59.506 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-07-11 12:53:59.515 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 12:53:59.515 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 12:53:59.535 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 12:53:59.543 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 12:53:59.547 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 12:53:59.551 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 12:53:59.551 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 12:53:59.949 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 12:53:59.949 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 12:53:59.951 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 12:53:59.952 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 12:53:59.953 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 12:53:59.953 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 12:53:59.954 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-07-11 12:55:22.637 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-07-11 12:55:22.643 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 12:55:22.643 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 12:55:22.663 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 12:55:22.672 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 12:55:22.674 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 12:55:22.677 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 12:55:22.677 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 12:55:22.984 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 12:55:22.984 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 12:55:22.985 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 12:55:22.986 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 12:55:22.987 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 12:55:22.987 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 12:55:22.988 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-07-11 12:55:22.988 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 12:55:22.992 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 12:55:22.992 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 12:55:22.992 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 12:55:23.006 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 12:55:23.006 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 12:55:23.007 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 12:55:23.018 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 12:55:23.678 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 12:55:23.762 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 12:55:23.780 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='org.dmsextension.paperless.templates.TExtraData@302a07d', documentCount=2}
+2025-07-11 12:55:23.780 [main] INFO  org.dmsextension.paperless.Main - TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='org.dmsextension.paperless.templates.TExtraData@302a07d', documentCount=2}
+2025-07-11 12:55:59.747 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-07-11 12:55:59.753 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 12:55:59.754 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 12:55:59.778 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 12:55:59.787 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 12:55:59.790 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 12:55:59.792 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 12:55:59.793 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 12:56:00.135 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 12:56:00.136 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 12:56:00.137 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 12:56:00.138 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 12:56:00.139 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 12:56:00.139 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 12:56:00.140 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-07-11 12:56:00.140 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 12:56:00.142 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 12:56:00.142 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 12:56:00.143 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 12:56:00.159 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 12:56:00.159 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 12:56:00.159 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 12:56:00.168 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 12:56:00.747 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 12:56:00.788 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 12:56:00.798 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='org.dmsextension.paperless.templates.TExtraData@302a07d', documentCount=2}
+2025-07-11 12:56:00.798 [main] INFO  org.dmsextension.paperless.Main - TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='org.dmsextension.paperless.templates.TExtraData@302a07d', documentCount=2}
+2025-07-11 12:56:23.589 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-07-11 12:56:23.595 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 12:56:23.596 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 12:56:23.617 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 12:56:23.627 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 12:56:23.629 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 12:56:23.631 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 12:56:23.631 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 12:56:23.956 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 12:56:23.956 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 12:56:23.958 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 12:56:23.958 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 12:56:23.960 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 12:56:23.960 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 12:56:23.960 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-07-11 12:56:23.961 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 12:56:23.963 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 12:56:23.964 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 12:56:23.964 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 12:56:23.991 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 12:56:23.992 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 12:56:23.992 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 12:56:24.012 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 12:56:24.682 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 12:56:24.736 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 12:56:24.754 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[org.dmsextension.paperless.templates.TSelectOptions@302a07d, org.dmsextension.paperless.templates.TSelectOptions@5cdd09b1, org.dmsextension.paperless.templates.TSelectOptions@8c11eee, org.dmsextension.paperless.templates.TSelectOptions@7e8dcdaa]}', documentCount=2}
+2025-07-11 12:56:24.755 [main] INFO  org.dmsextension.paperless.Main - TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[org.dmsextension.paperless.templates.TSelectOptions@302a07d, org.dmsextension.paperless.templates.TSelectOptions@5cdd09b1, org.dmsextension.paperless.templates.TSelectOptions@8c11eee, org.dmsextension.paperless.templates.TSelectOptions@7e8dcdaa]}', documentCount=2}
+2025-07-11 12:57:06.147 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-07-11 12:57:06.155 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 12:57:06.155 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 12:57:06.174 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 12:57:06.185 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 12:57:06.187 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 12:57:06.189 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 12:57:06.189 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 12:57:06.506 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 12:57:06.506 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 12:57:06.507 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 12:57:06.507 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 12:57:06.508 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 12:57:06.509 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 12:57:06.509 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-07-11 12:57:06.509 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 12:57:06.512 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 12:57:06.513 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 12:57:06.513 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 12:57:06.532 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 12:57:06.532 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 12:57:06.532 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 12:57:06.557 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 12:57:07.176 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 12:57:07.217 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 12:57:07.233 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}]}', documentCount=2}
+2025-07-11 12:57:07.233 [main] INFO  org.dmsextension.paperless.Main - TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}]}', documentCount=2}
+2025-07-11 13:01:25.450 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:01:25.460 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:01:25.533 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:01:25.561 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:01:25.568 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:01:26.336 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:01:26.337 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:01:26.338 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:01:26.359 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:01:26.360 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:01:26.361 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:01:26.455 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:01:28.443 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:01:28.469 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Building request to fetch non keyworded invoices
+2025-07-11 13:01:28.474 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Sending request
+2025-07-11 13:01:29.383 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Successfully fetched documents
+2025-07-11 13:01:29.387 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:01:29.388 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:01:29.389 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:01:29.389 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:01:29.390 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:01:29.394 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:01:29.395 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:01:29.398 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:01:29.399 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:01:29.403 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:01:29.403 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:01:29.406 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:01:29.406 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:01:29.407 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-07-11 13:01:29.408 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:01:29.408 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:01:29.408 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:01:29.417 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:01:29.418 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:01:29.418 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:01:29.420 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:01:31.050 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:01:31.152 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:01:31.174 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='test', name='Test', match='', documentCount=0}
+2025-07-11 13:01:31.196 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:01:31.198 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:01:31.199 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:01:31.199 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:01:31.203 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:01:31.204 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:01:31.204 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:01:31.205 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:01:31.206 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:01:31.206 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:01:31.208 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:01:31.209 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:01:31.209 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:01:31.209 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:01:31.209 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:01:31.214 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:01:31.215 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:01:31.216 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:01:31.217 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:01:31.221 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:01:31.222 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:01:31.223 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 13:01:31.224 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:01:31.225 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:01:31.226 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:01:31.226 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:01:31.227 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:01:31.227 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:01:31.232 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:01:32.814 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:01:32.872 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:01:32.878 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}]}', documentCount=2}
+2025-07-11 13:01:32.879 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:01:32.880 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:01:32.880 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:01:32.881 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:01:32.881 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:01:32.881 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:01:32.882 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:01:32.883 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:01:32.884 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:01:32.885 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:01:32.885 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:01:32.888 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:01:32.888 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:01:37.896 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving tag from api
+2025-07-11 13:01:37.903 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:01:37.906 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:01:37.908 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:01:37.914 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:01:37.916 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:01:37.916 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:01:37.935 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:01:39.775 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:01:39.870 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:01:39.972 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TTag{id=1, slug='null', name='Rechnungssteller', color='null', textColor='null', match='null', documentCount=2}
+2025-07-11 13:01:52.790 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:01:52.791 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:01:52.791 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:01:52.791 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:01:52.793 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:01:52.793 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:01:52.793 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:01:52.794 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:01:52.798 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:01:52.800 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:01:52.801 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:01:52.801 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:01:54.695 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:01.296 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:01.303 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:01.346 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:01.365 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:01.370 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:02.199 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:02.199 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:02.200 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:02.207 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:02.207 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:02.208 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:02.337 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:04.043 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:04.070 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Building request to fetch non keyworded invoices
+2025-07-11 13:02:04.077 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Sending request
+2025-07-11 13:02:04.424 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Successfully fetched documents
+2025-07-11 13:02:04.429 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:04.430 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:04.430 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:04.431 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:04.431 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:04.437 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:02:04.438 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:02:04.442 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:02:04.443 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:02:04.445 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:02:04.445 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:02:04.449 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:02:04.449 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:02:04.450 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-07-11 13:02:04.452 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:04.453 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:04.453 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:04.463 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:04.464 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:04.464 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:04.473 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:06.143 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:06.208 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:02:06.225 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='test', name='Test', match='', documentCount=0}
+2025-07-11 13:02:06.240 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:06.241 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:06.241 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:06.242 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:06.242 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:06.243 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:06.243 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:06.243 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:06.246 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:06.246 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:06.246 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:06.247 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:06.248 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:06.249 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:02:06.249 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:02:06.255 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:02:06.256 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:02:06.259 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:02:06.259 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:02:06.263 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:02:06.263 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:02:06.264 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 13:02:06.266 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:06.268 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:06.270 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:06.272 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:06.273 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:06.273 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:06.275 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:07.813 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:07.886 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:02:07.895 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}]}', documentCount=2}
+2025-07-11 13:02:07.896 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:07.897 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:07.897 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:07.897 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:07.898 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:07.898 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:02:07.899 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:02:07.900 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:02:07.901 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:02:07.902 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:02:07.903 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:02:07.906 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:02:07.906 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:02:32.011 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving tag from api
+2025-07-11 13:02:32.017 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:32.019 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:32.021 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:32.032 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:32.034 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:32.035 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:32.055 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:43.646 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:43.652 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:43.702 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:43.719 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:43.725 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:44.444 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:44.444 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:44.445 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:44.452 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:44.452 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:44.453 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:44.514 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:46.604 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:46.627 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Building request to fetch non keyworded invoices
+2025-07-11 13:02:46.633 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Sending request
+2025-07-11 13:02:47.105 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Successfully fetched documents
+2025-07-11 13:02:47.111 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:47.112 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:47.114 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:47.114 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:47.115 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:47.120 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:02:47.120 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:02:47.123 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:02:47.123 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:02:47.128 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:02:47.128 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:02:47.133 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:02:47.133 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:02:47.134 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-07-11 13:02:47.135 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:47.136 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:47.136 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:47.142 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:47.143 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:47.144 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:47.148 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:48.765 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:48.843 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:02:48.858 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='test', name='Test', match='', documentCount=0}
+2025-07-11 13:02:48.875 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:48.876 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:48.876 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:48.877 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:48.877 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:48.877 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:48.879 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:48.880 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:48.881 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:48.881 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:48.882 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:48.883 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:48.883 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:48.884 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:02:48.884 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:02:48.887 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:02:48.888 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:02:48.891 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:02:48.891 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:02:48.905 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:02:48.906 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:02:48.907 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 13:02:48.909 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:48.909 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:48.909 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:48.911 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:48.911 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:48.912 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:48.914 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:50.636 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:50.720 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:02:50.730 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}]}', documentCount=2}
+2025-07-11 13:02:50.736 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:50.737 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:50.737 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:50.738 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:50.738 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:50.738 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:02:50.740 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:02:50.743 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:02:50.743 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:02:50.743 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:02:50.745 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:02:50.747 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:02:50.747 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:02:50.750 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving tag from api
+2025-07-11 13:02:50.751 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:50.752 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:50.753 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:50.754 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:50.755 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:50.755 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:50.757 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:52.376 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:02:52.439 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:02:52.451 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TTag{id=1, slug='test', name='Test', color='#655ad5', textColor='#ffffff', match='', documentCount=0}
+2025-07-11 13:02:52.453 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:02:52.453 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:02:52.453 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:02:52.453 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:02:52.454 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:02:52.454 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:02:52.454 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:02:52.455 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:02:52.457 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:02:52.458 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:02:52.458 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:02:52.458 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:02:53.937 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:03:33.071 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:03:33.075 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:03:33.105 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:03:33.119 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:03:33.123 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:03:33.516 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:03:33.516 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:03:33.517 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:03:33.520 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:03:33.521 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:03:33.521 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:03:33.572 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:03:34.310 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:03:34.321 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Building request to fetch non keyworded invoices
+2025-07-11 13:03:34.323 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Sending request
+2025-07-11 13:03:34.490 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Successfully fetched documents
+2025-07-11 13:03:34.494 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:03:34.494 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:03:34.494 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:03:34.494 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:03:34.495 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:03:34.499 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:03:34.499 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:03:34.500 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:03:34.500 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:03:34.501 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:03:34.502 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:03:34.502 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:03:34.503 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:03:34.503 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-07-11 13:03:34.504 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:03:34.504 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:03:34.504 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:03:34.508 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:03:34.508 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:03:34.508 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:03:34.510 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:03:35.356 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:03:35.413 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:03:35.421 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='rechnungsbeleg', name='Rechnungsbeleg', match='', documentCount=2}
+2025-07-11 13:03:35.422 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:03:35.422 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:03:35.422 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:03:35.422 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:03:35.422 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:03:35.423 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:03:35.423 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:03:35.424 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:03:35.424 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:03:35.424 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:03:35.425 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:03:35.425 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:03:35.425 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:03:35.425 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:03:35.425 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:03:35.427 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:03:35.427 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:03:35.428 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:03:35.428 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:03:35.429 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:03:35.429 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:03:35.430 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 13:03:35.430 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:03:35.431 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:03:35.431 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:03:35.431 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:03:35.431 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:03:35.432 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:03:35.432 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:03:36.085 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:03:36.117 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:03:36.127 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}]}', documentCount=2}
+2025-07-11 13:03:36.128 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:03:36.129 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:03:36.129 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:03:36.129 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:03:36.129 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:03:36.129 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:03:36.129 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:03:36.130 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:03:36.130 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:03:36.130 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:03:36.131 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:03:36.131 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:03:36.131 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:03:36.132 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving tag from api
+2025-07-11 13:03:36.134 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:03:36.134 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:03:36.134 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:03:36.135 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:03:36.135 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:03:36.135 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:03:36.136 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:03:36.716 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:03:36.749 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:03:36.754 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TTag{id=1, slug='test', name='Test', color='#655ad5', textColor='#ffffff', match='', documentCount=0}
+2025-07-11 13:03:36.755 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:03:36.756 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:03:36.756 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:03:36.756 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:03:36.756 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:03:36.756 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:03:36.756 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:03:36.756 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:03:36.757 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:03:36.757 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:03:36.757 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:03:36.758 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:03:37.360 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:11:04.690 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:11:04.696 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:11:04.732 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:11:04.749 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:11:04.752 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:11:04.753 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:11:04.753 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:11:05.339 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:11:05.339 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:11:05.343 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:11:05.343 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:11:05.349 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:11:05.351 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:11:05.403 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:11:05.404 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:11:05.438 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:11:05.439 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:11:05.439 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:11:05.443 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:11:05.444 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:11:05.444 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:11:05.452 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:11:05.453 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:11:05.454 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:11:05.538 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:11:06.663 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:11:06.675 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Building request to fetch non keyworded invoices
+2025-07-11 13:11:06.680 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Sending request
+2025-07-11 13:11:06.916 [main] DEBUG org.dmsextension.paperless.fetch.InvoiceFetcher - Successfully fetched documents
+2025-07-11 13:11:06.930 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-11 13:11:06.931 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-11 13:11:06.931 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-11 13:11:06.931 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-11 13:11:06.931 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-11 13:11:06.931 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-11 13:11:06.932 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-11 13:11:06.934 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-11 13:11:06.934 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-11 13:11:06.935 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-11 13:11:06.935 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-11 13:11:06.936 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-11 13:11:06.936 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-11 13:11:06.939 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-07-11 13:11:06.939 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-11 13:11:06.939 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-11 13:11:06.939 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-11 13:11:06.944 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-11 13:11:06.944 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-11 13:11:06.945 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-11 13:11:06.946 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-11 13:11:07.571 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-11 13:11:07.606 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:11:07.610 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='rechnungsbeleg', name='Rechnungsbeleg', match='', documentCount=2}
+2025-07-11 13:11:07.615 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-07-11 13:11:07.649 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:11:07.651 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}]}', documentCount=2}
+2025-07-11 13:11:07.653 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving tag from api
+2025-07-11 13:11:07.690 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-11 13:11:07.697 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TTag{id=1, slug='test', name='Test', color='#655ad5', textColor='#ffffff', match='', documentCount=0}

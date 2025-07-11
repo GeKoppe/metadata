@@ -5,24 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d840d4a-d582-4922-9001-c704ebab8fcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/communication/ApiCommunicator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/fetch/Fetcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/fetch/InvoiceFetcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/queue/AnalyzeQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/queue/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/PaperlessCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/IDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TCustomFieldTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TCustomFieldValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TDocumentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TExtraData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TSearchResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TSelectOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/fetch/TestInvoiceFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/Cache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/DocumentCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/DocumentCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/PaperlessCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/PaperlessCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TCustomFieldTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TCustomFieldTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TExtraData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TExtraData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TSelectOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TSelectOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/fetch/TestInvoiceFetcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/fetch/TestInvoiceFetcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -55,6 +49,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "JUnit.Test.executor": "Run",
     "JUnit.TestCaches.testCustomFieldCache.executor": "Debug",
     "JUnit.TestCaches.testEnvironmentCache.executor": "Debug",
@@ -251,8 +246,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="16" />
+          <line>46</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/PaperlessCache.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

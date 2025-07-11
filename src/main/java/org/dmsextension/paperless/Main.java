@@ -1,18 +1,31 @@
 package org.dmsextension.paperless;
 
+import org.dmsextension.paperless.system.cache.Cache;
+import org.dmsextension.paperless.system.cache.PaperlessCache;
+import org.dmsextension.paperless.system.cache.SystemCache;
+import org.dmsextension.paperless.templates.TCustomFieldTemplate;
+import org.reflections.Reflections;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Set;
+
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    public static void main(String[] args) {
+        initCaches();
+        TCustomFieldTemplate cf = PaperlessCache.getCustomField("1");
+        logger.info(cf.toString());
+    }
+
+    private static void initCaches() {
+        logger.info("Initializing caches...");
+        SystemCache.initCaches();
+        PaperlessCache.initCaches();
+        logger.info("Successfully initialized caches");
     }
 }
