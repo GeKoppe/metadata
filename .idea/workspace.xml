@@ -5,19 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d840d4a-d582-4922-9001-c704ebab8fcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/Cache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/DocumentCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/http/HTTPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/communication/ApiCommunicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/fetch/Fetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/fetch/InvoiceFetcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/queue/AnalyzeQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/queue/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/PaperlessCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/IDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TCustomFieldTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TCustomFieldValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TDocumentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TExtraData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TSearchResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TSelectOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/templates/TTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/fetch/TestInvoiceFetcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,20 +56,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.Test.executor": "Run",
+    "JUnit.TestCaches.testCustomFieldCache.executor": "Debug",
     "JUnit.TestCaches.testEnvironmentCache.executor": "Debug",
     "JUnit.TestCaches.testUserCache.executor": "Debug",
+    "JUnit.TestInvoiceFetcher.TestInvoiceFetching.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gerri/Desktop/King of Ordners/Git Repos/metadata/metadata/src/test",
+    "last_opened_file_path": "C:/Users/gerri/Desktop/King of Ordners/Git Repos/metadata/metadata",
     "onboarding.tips.debug.path": "C:/Users/gerri/Desktop/King of Ordners/Git Repos/metadata/metadata/src/main/java/org/dmsextension/paperless/Main.java",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Debugger"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestCaches.testUserCache">
+  <component name="RunManager" selected="JUnit.Test">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <envs>
         <env name="CACHE_REFRESH" value="10" />
@@ -108,6 +117,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCaches.testCustomFieldCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="metadata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dmsextension.paperless.system.cache.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.dmsextension.paperless.system.cache" />
+      <option name="MAIN_CLASS_NAME" value="org.dmsextension.paperless.system.cache.TestCaches" />
+      <option name="METHOD_NAME" value="testCustomFieldCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="CACHE_REFRESH" value="10" />
+        <env name="PAPERLESS_API_PROTOCOL" value="http" />
+        <env name="PAPERLESS_HOST" value="ilostthegame" />
+        <env name="PAPERLESS_PORT" value="8000" />
+        <env name="PAPERLESS_SYSTEM_PW" value="elo" />
+        <env name="PAPERLESS_SYSTEM_USER" value="sysuser" />
+        <env name="TOKEN_VALIDITY" value="50" />
+        <env name="PAPERLESS_USER" value="sysuser" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestCaches.testEnvironmentCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="metadata" />
       <extension name="coverage">
@@ -149,14 +184,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestInvoiceFetcher.TestInvoiceFetching" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="metadata" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.dmsextension.paperless.fetch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.dmsextension.paperless.fetch" />
+      <option name="MAIN_CLASS_NAME" value="org.dmsextension.paperless.fetch.TestInvoiceFetcher" />
+      <option name="METHOD_NAME" value="TestInvoiceFetching" />
+      <option name="TEST_OBJECT" value="method" />
+      <envs>
+        <env name="CACHE_REFRESH" value="10" />
+        <env name="PAPERLESS_API_PROTOCOL" value="http" />
+        <env name="PAPERLESS_HOST" value="ilostthegame" />
+        <env name="PAPERLESS_PORT" value="8000" />
+        <env name="PAPERLESS_SYSTEM_USER" value="sysuser" />
+        <env name="TOKEN_VALIDITY" value="50" />
+        <env name="PAPERLESS_SYSTEM_PW" value="elo" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.TestInvoiceFetcher.TestInvoiceFetching" />
       <item itemvalue="JUnit.Test" />
+      <item itemvalue="JUnit.TestCaches.testCustomFieldCache" />
       <item itemvalue="JUnit.TestCaches.testUserCache" />
       <item itemvalue="JUnit.TestCaches.testEnvironmentCache" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCaches.testCustomFieldCache" />
         <item itemvalue="JUnit.TestCaches.testUserCache" />
         <item itemvalue="JUnit.TestCaches.testEnvironmentCache" />
       </list>
@@ -188,23 +251,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/dmsextension/paperless/system/cache/TestCaches.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/dmsextension/paperless/system/cache/SystemCache.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="5" />
+          <line>38</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
