@@ -4,8 +4,8 @@ import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Types;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.dmsextension.paperless.queue.AnalyzeQueue;
 import org.dmsextension.paperless.templates.TDocument;
-import org.dmsextension.paperless.templates.TDocumentType;
 import org.dmsextension.paperless.templates.TSearchResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,7 +21,7 @@ public class InvoiceFetcher extends Fetcher {
 
     }
 
-    public boolean fetchNonKeywordedInvoices() {
+    public void fetchNonKeywordedInvoices() {
         this.logger.debug("Building request to fetch non keyworded invoices");
         Request req = new Request.Builder()
                 .url(this.getBaseUrl() + "api/documents/?custom_field_query=[\"Verschlagwortung\",\"exact\",\"Unverschlagwortet\"]")
@@ -43,9 +43,11 @@ public class InvoiceFetcher extends Fetcher {
             }
         } catch (Exception ex) {
             this.logger.info("Exception while fetching invoices: " + ex.getMessage());
-            return false;
         }
-        return this.isFetched();
+
+        for (var d : this.documents.getResults()) {
+            if (!AnalyzeQueue.containsDocument(d)) AnalyzeQueue.addDocument(d);
+        }
     }
 
     public List<TDocument> getFetchedDocuments() {
