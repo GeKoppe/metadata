@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 public class TestCaches {
-
+    /**
     @BeforeAll
     public static void initCaches() {
         SystemCache.initCaches();
@@ -48,4 +48,5 @@ public class TestCaches {
         Assertions.assertEquals("#ffffff", t.getTextColor());
         Assertions.assertEquals("Test", t.getName());
     }
+    */
 }

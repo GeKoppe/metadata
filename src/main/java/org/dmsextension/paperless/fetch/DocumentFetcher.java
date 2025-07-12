@@ -13,16 +13,25 @@ import org.slf4j.LoggerFactory;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class InvoiceFetcher extends Fetcher {
+public class DocumentFetcher extends Fetcher implements Runnable {
 
-    private final Logger logger = LoggerFactory.getLogger(InvoiceFetcher.class);
+    private final Logger logger = LoggerFactory.getLogger(DocumentFetcher.class);
     private TSearchResult<TDocument> documents;
-    public InvoiceFetcher() {
+    public DocumentFetcher() {
 
     }
 
-    public void fetchNonKeywordedInvoices() {
-        this.logger.debug("Building request to fetch non keyworded invoices");
+    @Override
+    public void run() {
+        try {
+            this.fetchNonKeywordedDocuments();
+        } catch (Exception ex) {
+            this.logger.info("Exception occurred in execution: " + ex);
+        }
+    }
+
+    public void fetchNonKeywordedDocuments() {
+        this.logger.debug("Building request to fetch non keyworded documents");
         Request req = new Request.Builder()
                 .url(this.getBaseUrl() + "api/documents/?custom_field_query=[\"Verschlagwortung\",\"exact\",\"Unverschlagwortet\"]")
                 .header("Authorization", this.getAuthenticationString())

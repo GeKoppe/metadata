@@ -4,11 +4,18 @@ import com.squareup.moshi.Moshi;
 import okhttp3.OkHttpClient;
 import org.dmsextension.paperless.system.cache.SystemCache;
 
+import java.util.concurrent.TimeUnit;
+
 public abstract class ApiCommunicator {
     /**
      * Http client for fetching documents from paperless api
      */
-    private final OkHttpClient client = new OkHttpClient();
+    private final OkHttpClient client = new OkHttpClient.Builder()
+            .connectTimeout(5, TimeUnit.MINUTES)
+            .readTimeout(5, TimeUnit.MINUTES)
+            .callTimeout(5, TimeUnit.MINUTES)
+            .writeTimeout(5, TimeUnit.MINUTES)
+            .build();
 
     private String baseUrl;
     private final String authenticationString;

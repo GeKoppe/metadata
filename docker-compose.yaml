@@ -1,0 +1,11 @@
+services:
+  metadata:
+    image: metadata:v1
+    env_file:
+      - .env
+    networks:
+      - shared-net
+
+networks:
+  shared-net:
+    external: true

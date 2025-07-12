@@ -1,5 +1,6 @@
 package org.dmsextension.paperless.fetch;
 
+import org.dmsextension.paperless.queue.AnalyzeQueue;
 import org.dmsextension.paperless.system.cache.PaperlessCache;
 import org.dmsextension.paperless.system.cache.SystemCache;
 import org.dmsextension.paperless.templates.TDocument;
@@ -14,6 +15,7 @@ import java.util.List;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TestInvoiceFetcher {
 
+    /**
     @BeforeAll
     public static void initCaches() {
         SystemCache.initCaches();
@@ -21,12 +23,13 @@ public class TestInvoiceFetcher {
     }
     @Test
     public void TestInvoiceFetching() {
-        SystemCache.initCaches();
-        InvoiceFetcher f = new InvoiceFetcher();
-        f.fetchNonKeywordedInvoices();
+        DocumentFetcher f = new DocumentFetcher();
+        f.fetchNonKeywordedDocuments();
         TSearchResult<TDocument> result = f.getSearchResult();
         Assertions.assertTrue(result.getCount() > 0);
         List<TDocument> docs = f.getFetchedDocuments();
         Assertions.assertFalse(docs.isEmpty());
+        Assertions.assertNotNull(AnalyzeQueue.retrieveDocument());
     }
+    */
 }

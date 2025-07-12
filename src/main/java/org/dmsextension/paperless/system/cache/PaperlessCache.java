@@ -10,6 +10,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import org.dmsextension.paperless.templates.*;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -177,6 +178,7 @@ public abstract class PaperlessCache extends Cache {
                 .build(loader);
         logger.info("Document type cache initialized");
     }
+    @NotNull
     public static TCustomFieldTemplate getCustomField(String id) {
         return customFields.getUnchecked(id);
     }
@@ -186,6 +188,7 @@ public abstract class PaperlessCache extends Cache {
      * @param id Id of the tag.
      * @return {@link TDocumentType} instance
      */
+    @NotNull
     public static TDocumentType getDocumentType(String id) {
         return documentTypes.getUnchecked(id);
     }
@@ -195,7 +198,16 @@ public abstract class PaperlessCache extends Cache {
      * @param id Id of the tag.
      * @return {@link TTag} instance
      */
+    @NotNull
     public static TTag getTag(String id) {
         return tags.getUnchecked(id);
+    }
+
+    @Nullable
+    public static TCustomFieldTemplate getCustomFieldByName(String name) {
+        for (var entry : customFields.asMap().entrySet()) {
+            if (entry.getValue().getName().equals(name)) return entry.getValue();
+        }
+        return null;
     }
 }

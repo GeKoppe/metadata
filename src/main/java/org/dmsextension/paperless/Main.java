@@ -1,25 +1,27 @@
 package org.dmsextension.paperless;
 
-import org.dmsextension.paperless.system.cache.Cache;
+import org.dmsextension.paperless.analyze.Analyzer;
+import org.dmsextension.paperless.fetch.DocumentFetcher;
 import org.dmsextension.paperless.system.cache.PaperlessCache;
 import org.dmsextension.paperless.system.cache.SystemCache;
-import org.dmsextension.paperless.templates.TCustomFieldTemplate;
-import org.reflections.Reflections;
+import org.dmsextension.paperless.upload.Uploader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.util.Set;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         initCaches();
-        TCustomFieldTemplate cf = PaperlessCache.getCustomField("1");
-        logger.info(cf.toString());
+
+        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(3);
+        scheduler.scheduleAtFixedRate(new DocumentFetcher(), 0, 5, TimeUnit.MINUTES);
+        scheduler.scheduleAtFixedRate(new Analyzer(), 1, 5, TimeUnit.MINUTES);
+        scheduler.scheduleAtFixedRate(new Uploader(), 1, 1, TimeUnit.MINUTES);
     }
 
     private static void initCaches() {

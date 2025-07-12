@@ -3,8 +3,11 @@ package org.dmsextension.paperless.templates;
 import com.squareup.moshi.Json;
 
 import java.util.List;
+import java.util.Objects;
 
 public class TDocument implements IDto {
+
+    private int analyzeTries = 0;
     private int id;
     @Json(name="document_type")
     private String documentType;
@@ -58,6 +61,18 @@ public class TDocument implements IDto {
                 ", mimeType='" + mimeType + '\'' +
                 ", customFields=" + customFields +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TDocument tDocument)) return false;
+        return getId() == tDocument.getId();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 
     public int getId() {
@@ -154,5 +169,17 @@ public class TDocument implements IDto {
 
     public void setCustomFields(List<TCustomFieldValue> customFields) {
         this.customFields = customFields;
+    }
+
+    public int getAnalyzeTries() {
+        return analyzeTries;
+    }
+
+    public void setAnalyzeTries(int analyzeTries) {
+        this.analyzeTries = analyzeTries;
+    }
+
+    public void addAnalyzeTry() {
+        this.analyzeTries++;
     }
 }

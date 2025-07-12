@@ -8,18 +8,18 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class AnalyzeQueue extends Queue {
+public abstract class AnalyzeQueue extends Queue {
 
     private static final Logger logger = LoggerFactory.getLogger(AnalyzeQueue.class);
     private static final java.util.Queue<TDocument> documents = new LinkedBlockingQueue<>();
-    private static final java.util.Queue<String> ocr = new LinkedBlockingQueue<>();
 
     public AnalyzeQueue() { }
 
     public static boolean addDocument(TDocument doc) {
+        logger.debug(String.format("Adding document, %s documents in queue", documents.size() + 1));
         return documents.offer(doc);
     }
-    public static boolean addDocument(String doc) {
+    public static boolean addJsonDocument(String doc) {
         JsonAdapter<TDocument> adapter = moshi.adapter(TDocument.class);
         TDocument document;
         try {
@@ -31,15 +31,11 @@ public class AnalyzeQueue extends Queue {
         return addDocument(document);
     }
 
+    public static boolean containsDocument(TDocument doc) {
+        return documents.contains(doc);
+    }
+
     public static TDocument retrieveDocument() {
         return documents.poll();
-    }
-
-    public static boolean addOcr(String o) {
-        return ocr.offer(o);
-    }
-
-    public static String retrieveOcr() {
-        return ocr.poll();
     }
 }
