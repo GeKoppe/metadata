@@ -16,13 +16,32 @@ import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Caches all paperless configurations, including custom fields, document types and tags.
+ * {@link PaperlessCache#initCaches()} has to be called at start of program in order to be able to use
+ * this cache.
+ */
 public abstract class PaperlessCache extends Cache {
+    /**
+     * Logger
+     */
     private static final Logger logger = LoggerFactory.getLogger(PaperlessCache.class);
+    /**
+     * Holds definition of custom field configurations
+     */
     private static LoadingCache<String, TCustomFieldTemplate> customFields;
+    /**
+     * Holds definitions of document type configurations
+     */
     private static LoadingCache<String, TDocumentType> documentTypes;
-
+    /**
+     * Holds definitions of tag configurations
+     */
     private static LoadingCache<String, TTag> tags;
 
+    /**
+     * Initializes all caches. Has to be called at start of main program to use this cache
+     */
     public static void initCaches() {
         logger.info("Initializing paperless caches...");
         initCustomfieldCache();
@@ -32,9 +51,15 @@ public abstract class PaperlessCache extends Cache {
     }
 
 
+    /**
+     * Initializes {@link PaperlessCache#tags} with a loading cache that calls the api with given cache key
+     */
     private static void initTagCache() {
         logger.info("Initializing tag cache");
         CacheLoader<String, TTag> loader = new CacheLoader<String, TTag>() {
+            /**
+             * Http client to call api
+             */
             private final OkHttpClient client = new OkHttpClient.Builder().build();
             private final Moshi moshi = new Moshi.Builder().build();
             @NotNull
@@ -205,6 +230,7 @@ public abstract class PaperlessCache extends Cache {
 
     @Nullable
     public static TCustomFieldTemplate getCustomFieldByName(String name) {
+        logger.debug(String.format("Retrieving custom field with name %s", name));
         for (var entry : customFields.asMap().entrySet()) {
             if (entry.getValue().getName().equals(name)) return entry.getValue();
         }

@@ -11,6 +11,7 @@ import org.jetbrains.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.LinkedList;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
@@ -29,6 +30,8 @@ public abstract class SystemCache extends Cache {
      * Cache that holds user token information
      */
     private static LoadingCache<String, String> userCache;
+
+    private static final LinkedList<Integer> analyzedCache = new LinkedList<>();
     public SystemCache() {}
 
     public static void initCaches() {
@@ -38,6 +41,14 @@ public abstract class SystemCache extends Cache {
         initEnvironmentCache();
         initUserCache();
         logger.info("System caches initialized");
+    }
+
+    public static void addAlreadyAnalyzed(int documentId) {
+        analyzedCache.add(documentId);
+    }
+
+    public static boolean wasAlreadyAnalyzed(int documentId) {
+        return analyzedCache.contains(documentId);
     }
 
     /**
@@ -65,7 +76,7 @@ public abstract class SystemCache extends Cache {
      */
     private static void initUserCache() {
         CacheLoader<String, String> loader = new CacheLoader<String, String>() {
-            private static class Token {
+            class Token {
                 public String token;
             }
             @NotNull
