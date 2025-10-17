@@ -12,9 +12,9 @@ public abstract class ApiCommunicator {
      */
     private final OkHttpClient client = new OkHttpClient.Builder()
             .connectTimeout(5, TimeUnit.MINUTES)
-            .readTimeout(5, TimeUnit.MINUTES)
-            .callTimeout(5, TimeUnit.MINUTES)
-            .writeTimeout(5, TimeUnit.MINUTES)
+            .readTimeout(10, TimeUnit.MINUTES)
+            .callTimeout(10, TimeUnit.MINUTES)
+            .writeTimeout(10, TimeUnit.MINUTES)
             .build();
 
     private String baseUrl;

@@ -142,3 +142,103 @@ Rechnung {{substring Rechnungsnummer 0 9}} - {{Rechnungssteller}} - {{Belegdatum
 2025-07-14 13:59:06.877 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key OLLAMA_CHAT_URL not in cache, fetching from environment variables
 2025-07-14 13:59:06.877 [pool-2-thread-3] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
 2025-07-14 13:59:06.877 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Built body, sending request...
+2025-07-14 14:13:36.868 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-14 14:13:36.876 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-14 14:13:36.933 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-14 14:13:36.952 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-14 14:13:36.957 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-14 14:13:36.970 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-14 14:13:36.970 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-14 14:13:37.665 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-14 14:13:37.665 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-14 14:13:37.677 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-14 14:13:37.677 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-14 14:13:37.691 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-14 14:13:37.691 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-14 14:13:41.234 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-14 14:13:41.235 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-14 14:13:41.235 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-14 14:13:41.243 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-14 14:13:41.244 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-14 14:13:41.245 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-14 14:13:41.452 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-14 14:13:42.191 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-14 14:13:46.949 [main] DEBUG org.dmsextension.paperless.upload.Uploader - Getting document type definition for type 1
+2025-07-14 14:14:15.280 [main] INFO  org.dmsextension.paperless.upload.Uploader - Exception occurred while templating name: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+2025-07-14 14:14:23.520 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-14 14:14:23.533 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-14 14:14:23.605 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-14 14:14:23.641 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-14 14:14:23.655 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-14 14:14:23.668 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-14 14:14:23.671 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-14 14:14:24.580 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-14 14:14:24.580 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-14 14:14:24.589 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-14 14:14:24.589 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-14 14:14:24.600 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-14 14:14:24.602 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-14 14:14:27.992 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-14 14:14:27.992 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-14 14:14:27.993 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-14 14:14:28.003 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-14 14:14:28.004 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-14 14:14:28.004 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-14 14:14:28.234 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-14 14:14:28.954 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-14 14:14:31.142 [main] DEBUG org.dmsextension.paperless.upload.Uploader - Getting document type definition for type 1
+2025-07-14 14:14:32.281 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-07-14 14:14:32.348 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-14 14:14:32.403 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='rechnungsbeleg', name='Rechnungsbeleg', match='', documentCount=130}
+2025-07-14 14:14:39.367 [main] DEBUG org.dmsextension.paperless.upload.Uploader - Getting name template for document type Rechnungsbeleg
+2025-07-14 14:14:40.769 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key DESCRIPTION_Rechnungsbeleg not in cache, fetching from environment variables
+2025-07-14 14:14:58.590 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: inline@7ceb532f
+2025-07-14 14:14:58.860 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+2025-07-14 14:14:58.928 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+2025-07-14 14:15:05.623 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: inline@7ceb532f
+2025-07-14 14:15:05.624 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+2025-07-14 14:15:05.646 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+2025-07-14 14:15:10.136 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: inline@7ceb532f
+2025-07-14 14:15:10.137 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+2025-07-14 14:15:10.156 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+2025-07-14 14:16:46.326 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-14 14:16:46.335 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-07-14 14:16:46.398 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-07-14 14:16:46.422 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-07-14 14:16:46.428 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-07-14 14:16:46.435 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-07-14 14:16:46.435 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-07-14 14:16:46.966 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-07-14 14:16:46.966 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-07-14 14:16:46.974 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-07-14 14:16:46.974 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-07-14 14:16:46.985 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-07-14 14:16:46.985 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-07-14 14:16:46.993 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-07-14 14:16:46.993 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-07-14 14:16:46.994 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-07-14 14:16:46.997 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-07-14 14:16:46.998 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-07-14 14:16:46.998 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-07-14 14:16:47.058 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-07-14 14:16:47.880 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-07-14 14:16:50.892 [main] DEBUG org.dmsextension.paperless.upload.Uploader - Getting document type definition for type 1
+2025-07-14 14:16:51.314 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-07-14 14:16:51.394 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-14 14:16:51.456 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='rechnungsbeleg', name='Rechnungsbeleg', match='', documentCount=130}
+2025-07-14 14:16:51.700 [main] DEBUG org.dmsextension.paperless.upload.Uploader - Getting name template for document type Rechnungsbeleg
+2025-07-14 14:16:52.057 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key DESCRIPTION_Rechnungsbeleg not in cache, fetching from environment variables
+2025-07-14 14:16:57.362 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: inline@7ceb532f
+2025-07-14 14:16:57.630 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+2025-07-14 14:16:57.696 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+2025-07-14 14:17:14.763 [main] DEBUG org.dmsextension.paperless.upload.Uploader - Getting document type definition for type 4
+2025-07-14 14:17:14.895 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 4 not in cache, retrieving document type from api
+2025-07-14 14:17:14.938 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-07-14 14:17:14.940 [main] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=4, slug='entgeltabrechnung', name='Entgeltabrechnung', match='', documentCount=47}
+2025-07-14 14:17:15.060 [main] DEBUG org.dmsextension.paperless.upload.Uploader - Getting name template for document type Entgeltabrechnung
+2025-07-14 14:17:15.182 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key DESCRIPTION_Entgeltabrechnung not in cache, fetching from environment variables
+2025-07-14 14:17:18.530 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - About to parse: inline@4d54ecb4
+2025-07-14 14:17:18.530 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Building AST
+2025-07-14 14:17:18.539 [main] DEBUG com.github.jknack.handlebars.internal.HbsParserFactory - Creating templates
+2025-07-14 14:18:11.811 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-07-14 14:18:11.821 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache

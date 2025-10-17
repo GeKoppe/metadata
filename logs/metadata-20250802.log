@@ -69,3 +69,202 @@
 2025-08-02 13:27:17.255 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Request not successful, adding document back to queue
 2025-08-02 13:27:17.255 [pool-2-thread-2] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Document tmpDM 01.08.2025.pdf already in queue
 2025-08-02 13:27:17.255 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Analyzed all documents, instances documents
+2025-08-02 13:28:49.716 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-08-02 13:28:49.739 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-08-02 13:28:49.741 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-08-02 13:28:49.825 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-08-02 13:28:49.856 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-08-02 13:28:49.868 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-08-02 13:28:49.910 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-08-02 13:28:49.912 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-08-02 13:28:50.569 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-08-02 13:28:50.570 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-08-02 13:28:50.582 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-08-02 13:28:50.582 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-08-02 13:28:50.615 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-08-02 13:28:50.615 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-08-02 13:28:50.615 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-08-02 13:28:50.621 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-08-02 13:28:50.622 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-08-02 13:28:50.622 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-08-02 13:28:50.627 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-08-02 13:28:50.628 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-08-02 13:28:50.628 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-08-02 13:28:50.700 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-08-02 13:28:51.757 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-08-02 13:28:51.783 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Building request to fetch non keyworded documents
+2025-08-02 13:28:51.792 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Sending request
+2025-08-02 13:28:51.931 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Successfully fetched documents
+2025-08-02 13:28:51.933 [pool-2-thread-1] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Adding document, 1 documents in queue
+2025-08-02 13:28:51.933 [pool-2-thread-1] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Adding document, 2 documents in queue
+2025-08-02 13:29:51.788 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Start to analyze documents
+2025-08-02 13:29:51.789 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Analyzing document 314
+2025-08-02 13:29:51.800 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-08-02 13:29:51.844 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:51.854 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='rechnungsbeleg', name='Rechnungsbeleg', match='(?i)(?=.*\b(rechnung|kundenbeleg|quittung|kassen(beleg|bon)|zahlungs(beleg|nachweis)|barzahlung|zahlung)\b)(?!.*\b(ver(trag|einbarung)|kündigung|laufzeit|steuerjahr|lohnsteuer|steuer-id|elstam|bescheinigung|auftragsbestätigung|lieferdatum)\b)', documentCount=187}
+2025-08-02 13:29:51.854 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key OLLAMA_MODEL not in cache, fetching from environment variables
+2025-08-02 13:29:51.854 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Adding custom fields to ollama call
+2025-08-02 13:29:51.855 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-08-02 13:29:51.884 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:51.888 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}, TSelectOptions{id='C8brrkmeYmsC0P62', label='Deutsche Post AG'}, TSelectOptions{id='DqPqqtcGLCvoCwDH', label='Flaschenpost'}, TSelectOptions{id='JSDtBEtju1465PyQ', label='VACUO Studio'}, TSelectOptions{id='XiZP9to5Mt1KHbu6', label='Pflanzen für Alle'}, TSelectOptions{id='zHKImt1mOGChTMDV', label='Spotify'}, TSelectOptions{id='a17qEEAErn6vxxbk', label='Rossmann'}, TSelectOptions{id='TXhTZ8GPZnODToNH', label='Deutsche Bahn'}, TSelectOptions{id='KIuTnlerCFuAdXYa', label='Sonstige'}, TSelectOptions{id='pNQF1zUnUgt09fzM', label='Vodafone Deutschland GmbH'}, TSelectOptions{id='6IVLFV1AWjk3sODQ', label='C. und I. Freese'}]}', documentCount=187}
+2025-08-02 13:29:51.888 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 2 not in cache, retrieving custom field from api
+2025-08-02 13:29:51.916 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:51.916 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=2, name='Gesamtbetrag', dataType='float', extraData='TExtraData{selectOptions=[]}', documentCount=187}
+2025-08-02 13:29:51.917 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 3 not in cache, retrieving custom field from api
+2025-08-02 13:29:51.942 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:51.943 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=3, name='Belegdatum', dataType='date', extraData='TExtraData{selectOptions=[]}', documentCount=189}
+2025-08-02 13:29:51.943 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 4 not in cache, retrieving custom field from api
+2025-08-02 13:29:51.970 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:51.970 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=4, name='Ort', dataType='string', extraData='TExtraData{selectOptions=[]}', documentCount=186}
+2025-08-02 13:29:51.970 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 5 not in cache, retrieving custom field from api
+2025-08-02 13:29:51.998 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:51.999 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=5, name='Verschlagwortung', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='5sX6FXVzX2rcU13e', label='Manuell'}, TSelectOptions{id='n7bj6pElAefE8mBY', label='Automatisiert'}, TSelectOptions{id='gx7l5oCAIrFiPjKh', label='Unverschlagwortet'}, TSelectOptions{id='hu0gv8k16OEZD2hi', label='In Arbeit'}]}', documentCount=248}
+2025-08-02 13:29:51.999 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 6 not in cache, retrieving custom field from api
+2025-08-02 13:29:52.028 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:52.029 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=6, name='Rechnungsnummer', dataType='string', extraData='TExtraData{selectOptions=[]}', documentCount=187}
+2025-08-02 13:29:52.029 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 13 not in cache, retrieving custom field from api
+2025-08-02 13:29:52.058 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:52.060 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=13, name='Kategorie', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='F72qKQOLphi92cji', label='Lebensmittel'}, TSelectOptions{id='Ma6chhJGY1EU4Ijs', label='Technik'}, TSelectOptions{id='yCKt8rEmVU9CjwVC', label='Vape'}, TSelectOptions{id='SABBRq0yLWDdtMWQ', label='Freizeit'}, TSelectOptions{id='M2NffwlBcqYLkqd2', label='Haushalt'}, TSelectOptions{id='Ib4zEhogzpWFplvn', label='Pflanzen'}, TSelectOptions{id='FZmMiglLdoPb6Zz9', label='Kleidung'}, TSelectOptions{id='oV2wTPMlA4SIkQuz', label='Tattoo'}, TSelectOptions{id='D99ZSJRBpfHyaXBI', label='Drogerie'}, TSelectOptions{id='iG6gWCtvF4jdHzW1', label='Abo'}, TSelectOptions{id='2cJjXbx2cLNj1huX', label='Miete'}]}', documentCount=186}
+2025-08-02 13:29:52.060 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 14 not in cache, retrieving custom field from api
+2025-08-02 13:29:52.092 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:29:52.093 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=14, name='Bereit für Dokumentation', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='QkkF2X6KbGTTNKz8', label='Bereit'}, TSelectOptions{id='N1GTRX329rGOkd91', label='Verarbeitet'}]}', documentCount=186}
+2025-08-02 13:29:52.093 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Creating http request
+2025-08-02 13:29:52.109 [pool-2-thread-2] DEBUG org.dmsextension.paperless.templates.TOllamaCall - Built call: "format": { "type":"object","properties":{"Rechnungssteller": {"type":"string"},"Gesamtbetrag": {"type":"number"},"Belegdatum": {"type":"string"},"Ort": {"type":"string"},"Rechnungsnummer": {"type":"string"},"Kategorie": {"type":"string"},"required": ["Rechnungssteller","Gesamtbetrag","Belegdatum","Ort","Rechnungsnummer","Kategorie"}}
+2025-08-02 13:32:08.040 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key OLLAMA_CHAT_URL not in cache, fetching from environment variables
+2025-08-02 13:32:08.040 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Built body, sending request...
+2025-08-02 13:32:08.045 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Request not successful, adding document back to queue
+2025-08-02 13:32:08.046 [pool-2-thread-2] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Document da2537f7-944f-4641-b96e-56df23eccc69.pdf already in queue
+2025-08-02 13:32:08.046 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Analyzing document 316
+2025-08-02 13:32:08.047 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Adding custom fields to ollama call
+2025-08-02 13:32:08.047 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Creating http request
+2025-08-02 13:32:08.789 [pool-2-thread-2] DEBUG org.dmsextension.paperless.templates.TOllamaCall - Built call: "format": { "type":"object","properties":{"Rechnungssteller": {"type":"string"},"Gesamtbetrag": {"type":"number"},"Belegdatum": {"type":"string"},"Ort": {"type":"string"},"Rechnungsnummer": {"type":"string"},"Kategorie": {"type":"string"},"required": ["Rechnungssteller","Gesamtbetrag","Belegdatum","Ort","Rechnungsnummer","Kategorie"}}
+2025-08-02 13:32:08.790 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Built body, sending request...
+2025-08-02 13:32:08.793 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Request not successful, adding document back to queue
+2025-08-02 13:32:08.793 [pool-2-thread-2] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Document tmpDM 01.08.2025.pdf already in queue
+2025-08-02 13:32:08.793 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Analyzed all documents, instances documents
+2025-08-02 13:32:12.321 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-08-02 13:32:12.330 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-08-02 13:32:12.331 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-08-02 13:32:12.358 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-08-02 13:32:12.369 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-08-02 13:32:12.372 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-08-02 13:32:12.378 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-08-02 13:32:12.378 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-08-02 13:32:12.754 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-08-02 13:32:12.754 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-08-02 13:32:12.761 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-08-02 13:32:12.761 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-08-02 13:32:12.768 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-08-02 13:32:12.768 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-08-02 13:32:12.768 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-08-02 13:32:12.774 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-08-02 13:32:12.774 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-08-02 13:32:12.774 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-08-02 13:32:12.780 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-08-02 13:32:12.780 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-08-02 13:32:12.780 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-08-02 13:32:12.827 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-08-02 13:32:13.425 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-08-02 13:32:13.442 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Building request to fetch non keyworded documents
+2025-08-02 13:32:13.447 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Sending request
+2025-08-02 13:32:13.557 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Successfully fetched documents
+2025-08-02 13:32:13.560 [pool-2-thread-1] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Adding document, 1 documents in queue
+2025-08-02 13:32:13.560 [pool-2-thread-1] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Adding document, 2 documents in queue
+2025-08-02 13:33:13.457 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Start to analyze documents
+2025-08-02 13:33:13.459 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Analyzing document 314
+2025-08-02 13:33:13.466 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-08-02 13:33:13.514 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.521 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='rechnungsbeleg', name='Rechnungsbeleg', match='(?i)(?=.*\b(rechnung|kundenbeleg|quittung|kassen(beleg|bon)|zahlungs(beleg|nachweis)|barzahlung|zahlung)\b)(?!.*\b(ver(trag|einbarung)|kündigung|laufzeit|steuerjahr|lohnsteuer|steuer-id|elstam|bescheinigung|auftragsbestätigung|lieferdatum)\b)', documentCount=187}
+2025-08-02 13:33:13.522 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key OLLAMA_MODEL not in cache, fetching from environment variables
+2025-08-02 13:33:13.523 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Adding custom fields to ollama call
+2025-08-02 13:33:13.523 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.553 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.557 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}, TSelectOptions{id='C8brrkmeYmsC0P62', label='Deutsche Post AG'}, TSelectOptions{id='DqPqqtcGLCvoCwDH', label='Flaschenpost'}, TSelectOptions{id='JSDtBEtju1465PyQ', label='VACUO Studio'}, TSelectOptions{id='XiZP9to5Mt1KHbu6', label='Pflanzen für Alle'}, TSelectOptions{id='zHKImt1mOGChTMDV', label='Spotify'}, TSelectOptions{id='a17qEEAErn6vxxbk', label='Rossmann'}, TSelectOptions{id='TXhTZ8GPZnODToNH', label='Deutsche Bahn'}, TSelectOptions{id='KIuTnlerCFuAdXYa', label='Sonstige'}, TSelectOptions{id='pNQF1zUnUgt09fzM', label='Vodafone Deutschland GmbH'}, TSelectOptions{id='6IVLFV1AWjk3sODQ', label='C. und I. Freese'}]}', documentCount=187}
+2025-08-02 13:33:13.558 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 2 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.588 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.589 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=2, name='Gesamtbetrag', dataType='float', extraData='TExtraData{selectOptions=[]}', documentCount=187}
+2025-08-02 13:33:13.590 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 3 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.615 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.616 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=3, name='Belegdatum', dataType='date', extraData='TExtraData{selectOptions=[]}', documentCount=189}
+2025-08-02 13:33:13.616 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 4 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.643 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.643 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=4, name='Ort', dataType='string', extraData='TExtraData{selectOptions=[]}', documentCount=186}
+2025-08-02 13:33:13.643 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 5 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.673 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.674 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=5, name='Verschlagwortung', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='5sX6FXVzX2rcU13e', label='Manuell'}, TSelectOptions{id='n7bj6pElAefE8mBY', label='Automatisiert'}, TSelectOptions{id='gx7l5oCAIrFiPjKh', label='Unverschlagwortet'}, TSelectOptions{id='hu0gv8k16OEZD2hi', label='In Arbeit'}]}', documentCount=248}
+2025-08-02 13:33:13.675 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 6 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.707 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.708 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=6, name='Rechnungsnummer', dataType='string', extraData='TExtraData{selectOptions=[]}', documentCount=187}
+2025-08-02 13:33:13.708 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 13 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.742 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.742 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=13, name='Kategorie', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='F72qKQOLphi92cji', label='Lebensmittel'}, TSelectOptions{id='Ma6chhJGY1EU4Ijs', label='Technik'}, TSelectOptions{id='yCKt8rEmVU9CjwVC', label='Vape'}, TSelectOptions{id='SABBRq0yLWDdtMWQ', label='Freizeit'}, TSelectOptions{id='M2NffwlBcqYLkqd2', label='Haushalt'}, TSelectOptions{id='Ib4zEhogzpWFplvn', label='Pflanzen'}, TSelectOptions{id='FZmMiglLdoPb6Zz9', label='Kleidung'}, TSelectOptions{id='oV2wTPMlA4SIkQuz', label='Tattoo'}, TSelectOptions{id='D99ZSJRBpfHyaXBI', label='Drogerie'}, TSelectOptions{id='iG6gWCtvF4jdHzW1', label='Abo'}, TSelectOptions{id='2cJjXbx2cLNj1huX', label='Miete'}]}', documentCount=186}
+2025-08-02 13:33:13.743 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 14 not in cache, retrieving custom field from api
+2025-08-02 13:33:13.784 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:33:13.784 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=14, name='Bereit für Dokumentation', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='QkkF2X6KbGTTNKz8', label='Bereit'}, TSelectOptions{id='N1GTRX329rGOkd91', label='Verarbeitet'}]}', documentCount=186}
+2025-08-02 13:33:13.785 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Creating http request
+2025-08-02 13:33:17.742 [pool-2-thread-2] DEBUG org.dmsextension.paperless.templates.TOllamaCall - Built call: "format": { "type":"object","properties":{"Rechnungssteller": {"type":"string"},"Gesamtbetrag": {"type":"number"},"Belegdatum": {"type":"string"},"Ort": {"type":"string"},"Rechnungsnummer": {"type":"string"},"Kategorie": {"type":"string"},"required": ["Rechnungssteller","Gesamtbetrag","Belegdatum","Ort","Rechnungsnummer","Kategorie"]}}
+2025-08-02 13:34:06.722 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key OLLAMA_CHAT_URL not in cache, fetching from environment variables
+2025-08-02 13:34:06.722 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Built body, sending request...
+2025-08-02 13:34:10.727 [main] INFO  org.dmsextension.paperless.Main - Initializing caches...
+2025-08-02 13:34:10.735 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing system caches...
+2025-08-02 13:34:10.735 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Initializing environment cache
+2025-08-02 13:34:10.757 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - Environment cache initialized
+2025-08-02 13:34:10.768 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key TOKEN_VALIDITY not in cache, fetching from environment variables
+2025-08-02 13:34:10.771 [main] INFO  org.dmsextension.paperless.system.cache.SystemCache - System caches initialized
+2025-08-02 13:34:10.775 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing paperless caches...
+2025-08-02 13:34:10.776 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing custom field cache
+2025-08-02 13:34:11.176 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Custom field cache initialized
+2025-08-02 13:34:11.176 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing document type cache
+2025-08-02 13:34:11.182 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Document type cache initialized
+2025-08-02 13:34:11.182 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Initializing tag cache
+2025-08-02 13:34:11.188 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Tag cache initialized
+2025-08-02 13:34:11.188 [main] INFO  org.dmsextension.paperless.system.cache.PaperlessCache - Paperless caches initialized
+2025-08-02 13:34:11.189 [main] INFO  org.dmsextension.paperless.Main - Successfully initialized caches
+2025-08-02 13:34:11.192 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Getting new token for user sysuser
+2025-08-02 13:34:11.193 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_USER not in cache, fetching from environment variables
+2025-08-02 13:34:11.193 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_SYSTEM_PW not in cache, fetching from environment variables
+2025-08-02 13:34:11.195 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_API_PROTOCOL not in cache, fetching from environment variables
+2025-08-02 13:34:11.195 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_HOST not in cache, fetching from environment variables
+2025-08-02 13:34:11.196 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key PAPERLESS_PORT not in cache, fetching from environment variables
+2025-08-02 13:34:11.235 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Sending request...
+2025-08-02 13:34:11.842 [main] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Request successful, getting token for user sysuser
+2025-08-02 13:34:11.861 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Building request to fetch non keyworded documents
+2025-08-02 13:34:11.864 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Sending request
+2025-08-02 13:34:11.969 [pool-2-thread-1] DEBUG org.dmsextension.paperless.fetch.DocumentFetcher - Successfully fetched documents
+2025-08-02 13:34:11.971 [pool-2-thread-1] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Adding document, 1 documents in queue
+2025-08-02 13:34:11.971 [pool-2-thread-1] DEBUG org.dmsextension.paperless.queue.AnalyzeQueue - Adding document, 2 documents in queue
+2025-08-02 13:35:11.872 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Start to analyze documents
+2025-08-02 13:35:11.874 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Analyzing document 314
+2025-08-02 13:35:11.880 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving document type from api
+2025-08-02 13:35:11.947 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:11.961 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TDocumentType{id=1, slug='rechnungsbeleg', name='Rechnungsbeleg', match='(?i)(?=.*\b(rechnung|kundenbeleg|quittung|kassen(beleg|bon)|zahlungs(beleg|nachweis)|barzahlung|zahlung)\b)(?!.*\b(ver(trag|einbarung)|kündigung|laufzeit|steuerjahr|lohnsteuer|steuer-id|elstam|bescheinigung|auftragsbestätigung|lieferdatum)\b)', documentCount=187}
+2025-08-02 13:35:11.962 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key OLLAMA_MODEL not in cache, fetching from environment variables
+2025-08-02 13:35:11.962 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Adding custom fields to ollama call
+2025-08-02 13:35:11.963 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 1 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.003 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.009 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=1, name='Rechnungssteller', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='jl072TT23oHFLZdd', label='REWE'}, TSelectOptions{id='yg5npmvfd4DPE5FR', label='Dampfdorado'}, TSelectOptions{id='oygN7aFErhXWUzr5', label='Amazon'}, TSelectOptions{id='1uCJBigdzKOLbx0A', label='Congstar'}, TSelectOptions{id='C8brrkmeYmsC0P62', label='Deutsche Post AG'}, TSelectOptions{id='DqPqqtcGLCvoCwDH', label='Flaschenpost'}, TSelectOptions{id='JSDtBEtju1465PyQ', label='VACUO Studio'}, TSelectOptions{id='XiZP9to5Mt1KHbu6', label='Pflanzen für Alle'}, TSelectOptions{id='zHKImt1mOGChTMDV', label='Spotify'}, TSelectOptions{id='a17qEEAErn6vxxbk', label='Rossmann'}, TSelectOptions{id='TXhTZ8GPZnODToNH', label='Deutsche Bahn'}, TSelectOptions{id='KIuTnlerCFuAdXYa', label='Sonstige'}, TSelectOptions{id='pNQF1zUnUgt09fzM', label='Vodafone Deutschland GmbH'}, TSelectOptions{id='6IVLFV1AWjk3sODQ', label='C. und I. Freese'}]}', documentCount=187}
+2025-08-02 13:35:12.010 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 2 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.043 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.044 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=2, name='Gesamtbetrag', dataType='float', extraData='TExtraData{selectOptions=[]}', documentCount=187}
+2025-08-02 13:35:12.044 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 3 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.077 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.078 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=3, name='Belegdatum', dataType='date', extraData='TExtraData{selectOptions=[]}', documentCount=189}
+2025-08-02 13:35:12.079 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 4 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.125 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.126 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=4, name='Ort', dataType='string', extraData='TExtraData{selectOptions=[]}', documentCount=186}
+2025-08-02 13:35:12.127 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 5 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.168 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.170 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=5, name='Verschlagwortung', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='5sX6FXVzX2rcU13e', label='Manuell'}, TSelectOptions{id='n7bj6pElAefE8mBY', label='Automatisiert'}, TSelectOptions{id='gx7l5oCAIrFiPjKh', label='Unverschlagwortet'}, TSelectOptions{id='hu0gv8k16OEZD2hi', label='In Arbeit'}]}', documentCount=248}
+2025-08-02 13:35:12.170 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 6 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.212 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.212 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=6, name='Rechnungsnummer', dataType='string', extraData='TExtraData{selectOptions=[]}', documentCount=187}
+2025-08-02 13:35:12.213 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 13 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.249 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.251 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=13, name='Kategorie', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='F72qKQOLphi92cji', label='Lebensmittel'}, TSelectOptions{id='Ma6chhJGY1EU4Ijs', label='Technik'}, TSelectOptions{id='yCKt8rEmVU9CjwVC', label='Vape'}, TSelectOptions{id='SABBRq0yLWDdtMWQ', label='Freizeit'}, TSelectOptions{id='M2NffwlBcqYLkqd2', label='Haushalt'}, TSelectOptions{id='Ib4zEhogzpWFplvn', label='Pflanzen'}, TSelectOptions{id='FZmMiglLdoPb6Zz9', label='Kleidung'}, TSelectOptions{id='oV2wTPMlA4SIkQuz', label='Tattoo'}, TSelectOptions{id='D99ZSJRBpfHyaXBI', label='Drogerie'}, TSelectOptions{id='iG6gWCtvF4jdHzW1', label='Abo'}, TSelectOptions{id='2cJjXbx2cLNj1huX', label='Miete'}]}', documentCount=186}
+2025-08-02 13:35:12.251 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Key 14 not in cache, retrieving custom field from api
+2025-08-02 13:35:12.286 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Successfully executed request, parsing response
+2025-08-02 13:35:12.287 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.PaperlessCache - Template put into cache: TCustomFieldTemplate{id=14, name='Bereit für Dokumentation', dataType='select', extraData='TExtraData{selectOptions=[TSelectOptions{id='QkkF2X6KbGTTNKz8', label='Bereit'}, TSelectOptions{id='N1GTRX329rGOkd91', label='Verarbeitet'}]}', documentCount=186}
+2025-08-02 13:35:12.287 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Creating http request
+2025-08-02 13:35:12.302 [pool-2-thread-2] DEBUG org.dmsextension.paperless.templates.TOllamaCall - Built call: "format": { "type":"object","properties":{"Rechnungssteller": {"type":"string"},"Gesamtbetrag": {"type":"number"},"Belegdatum": {"type":"string"},"Ort": {"type":"string"},"Rechnungsnummer": {"type":"string"},"Kategorie": {"type":"string"}},"required": ["Rechnungssteller","Gesamtbetrag","Belegdatum","Ort","Rechnungsnummer","Kategorie"]}
+2025-08-02 13:36:55.065 [pool-2-thread-2] DEBUG org.dmsextension.paperless.system.cache.SystemCache - Key OLLAMA_CHAT_URL not in cache, fetching from environment variables
+2025-08-02 13:36:55.065 [pool-2-thread-2] DEBUG org.dmsextension.paperless.analyze.Analyzer - Built body, sending request...

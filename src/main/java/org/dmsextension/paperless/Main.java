@@ -22,6 +22,7 @@ public class Main {
         scheduler.scheduleAtFixedRate(new DocumentFetcher(), 0, 5, TimeUnit.MINUTES);
         scheduler.scheduleAtFixedRate(new Analyzer(), 1, 5, TimeUnit.MINUTES);
         scheduler.scheduleAtFixedRate(new Uploader(), 1, 1, TimeUnit.MINUTES);
+
     }
 
     private static void initCaches() {

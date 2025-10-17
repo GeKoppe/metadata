@@ -1,21 +1,36 @@
 package org.dmsextension.paperless.upload;
 
+import com.github.jknack.handlebars.Handlebars;
+import com.github.jknack.handlebars.Helper;
+import com.github.jknack.handlebars.Options;
+import com.github.jknack.handlebars.Template;
 import okhttp3.*;
 import org.dmsextension.paperless.communication.ApiCommunicator;
 import org.dmsextension.paperless.queue.UploadQueue;
 import org.dmsextension.paperless.system.cache.PaperlessCache;
 import org.dmsextension.paperless.system.cache.SystemCache;
 import org.dmsextension.paperless.templates.TCustomFieldTemplate;
+import org.dmsextension.paperless.templates.TDocumentType;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Uploads documents from {@link UploadQueue} to paperless.
+ */
 public class Uploader extends ApiCommunicator implements Runnable {
+    /**
+     * Logger
+     */
     private final Logger logger = LoggerFactory.getLogger(Uploader.class);
+    /**
+     * Cache for documents to upload
+     */
     private final List<Map<String, Object>> documentUploads = new ArrayList<>();
 
     public Uploader() {
@@ -29,16 +44,38 @@ public class Uploader extends ApiCommunicator implements Runnable {
         } while (upload != null);
     }
 
-    private String parseDocumentName(@NotNull Map<String, Object> info) {
-        switch (Integer.parseInt("" + info.get("document_type"))) {
-            case 1:
-                String value = "" + info.get("Rechnungsnummer");
-                if (value.length() > 8) value = value.substring(0, 8);
-                return String.format("Rechnung %s - %s - %s",  value, (String) info.get("Rechnungssteller"), info.get("Belegdatum"));
+    public String parseDocumentName(@NotNull Map<String, Object> info) {
+        String documentName = "Default";
+        try {
+            this.logger.debug(String.format("Getting document type definition for type %s", info.get("document_type")));
+            TDocumentType type = PaperlessCache.getDocumentType("" + info.get("document_type"));
 
-            default:
-                return "";
+            this.logger.debug(String.format("Getting name template for document type %s", type.getName()));
+            String nameTemplate = SystemCache.getEnvironmentCacheValue(String.format("DESCRIPTION_%s", type.getName()));
+            if (nameTemplate.isEmpty()) {
+                this.logger.debug(String.format("No name template found for type %s", type.getName()));
+                return documentName;
+            }
+            Handlebars h = new Handlebars();
+            Helper<String> substring = (s, options) -> {
+                int start = options.param(0);
+                int end = options.param(1);
+                if (s.length() < end) {
+                    end = s.length();
+                }
+                if (start > end) {
+                    start = end;
+                }
+
+                return s.substring(start, end);
+            };
+            h.registerHelper("substring", substring);
+            Template template = h.compileInline(nameTemplate);
+            documentName = template.apply(info);
+        } catch (Exception ex) {
+            this.logger.info("Exception occurred while templating name: " + ex);
         }
+        return documentName;
     }
     private void uploadDocuments() {
         for (var d : this.documentUploads) {
